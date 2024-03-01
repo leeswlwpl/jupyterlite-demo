@@ -25,6 +25,12 @@ jobs:
         run: |
           cp README.md content
           jupyter lite build --contents content --output-dir dist
+      - name: Copy css file to dist
+        run: |
+          cp custom.css dist/lab/custom.css
+      - name: Copy and Replace index file in dist
+        run: |
+          cp index.html dist/lab/index.html
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
