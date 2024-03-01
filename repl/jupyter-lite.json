@@ -5,7 +5,7 @@
         "@jupyterlab/drawio-extension",
         "jupyterlab-kernel-spy",
         "jupyterlab-tour"
-      ]
+      ],
+      "customCSS": "./custom.css"
     }
   }
-  
