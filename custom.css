@@ -1,6 +1,7 @@
 body {
 
---md-red-50: #ffebee;
+    /* default var */
+    --md-red-50: #ffebee;
     --md-red-100: #ffcdd2;
     --md-red-200: #ef9a9a;
     --md-red-300: #e57373;
@@ -257,20 +258,12 @@ body {
 
 
 
-
-
+    /* custom */
     --jp-layout-color0: #363d4a;
-    --jp-layout-color1: rgba(35, 35, 35, 0.5);
+    --jp-layout-color1: rgba(35, 35, 35, 1);
     --jp-layout-color2: #363d4a;
     --jp-layout-color3: black;
     --jp-layout-color4: black;
-
-    /*--jp-layout-color0: #363d4a;*/
-    /*--jp-layout-color1: orange;*/
-    /*--jp-layout-color2: yellow;*/
-    /*--jp-layout-color3: green;*/
-    /*--jp-layout-color4: black;*/
-
 
     /*--jp-toolbar-background: rgba(35, 35, 35, 0.5);*/
     --jp-toolbar-background: transparent;
@@ -319,11 +312,13 @@ body {
 
 }
 
-.jp-FileBrowser-toolbar .jp-ToolbarButtonComponent[data-command='launcher:create'] .jp-icon3 {
-    fill: var(--jp-ui-font-color1) !important;
-}
+/*.jp-FileBrowser-toolbar .jp-ToolbarButtonComponent[data-command='launcher:create'] .jp-icon3 {*/
+/*    fill: var(--jp-ui-font-color1) !important;*/
+/*}*/
 
-
+/*.jp-CodeConsole .ͼo, .jp-Notebook .ͼo{*/
+/*    background: #101010;*/
+/*}*/
 
 /*.lm-Widget.jp-Toolbar{*/
 /*    background-color: var(--jp-layout-color1);*/
