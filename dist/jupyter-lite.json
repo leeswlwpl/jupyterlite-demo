@@ -37,41 +37,8 @@
       {
         "extension": "./extension",
         "liteExtension": true,
-        "load": "static/remoteEntry.71d01fef2fffac9d2c04.js",
-        "name": "@jupyterlite/javascript-kernel-extension"
-      },
-      {
-        "extension": "./extension",
-        "liteExtension": true,
-        "load": "static/remoteEntry.9117113815033289c4d5.js",
-        "name": "@jupyterlite/p5-kernel-extension",
-        "style": "./style"
-      },
-      {
-        "extension": "./extension",
-        "liteExtension": true,
         "load": "static/remoteEntry.badedd5607b5d4e57583.js",
         "name": "@jupyterlite/pyodide-kernel-extension"
-      },
-      {
-        "extension": "./extension",
-        "liteExtension": true,
-        "load": "static/remoteEntry.f69e84c5aaec83c179ca.js",
-        "name": "@jupyterlite/xeus-lua-kernel",
-        "style": "./style"
-      },
-      {
-        "extension": "./extension",
-        "liteExtension": true,
-        "load": "static/remoteEntry.960d5d0f875a651e597f.js",
-        "name": "@jupyterlite/xeus-sqlite-kernel",
-        "style": "./style"
-      },
-      {
-        "extension": "./extension",
-        "liteExtension": false,
-        "load": "static/remoteEntry.006e3346ec55b1293bd6.js",
-        "name": "@timkpaine/jupyterlab_miami_nights"
       },
       {
         "extension": "./extension",
