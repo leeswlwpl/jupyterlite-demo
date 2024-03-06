@@ -373,6 +373,23 @@
           "./extensions/@jupyterlite/pyodide-kernel-extension/static/pypi/all.json?sha256=347ef7784cbabf42964174d3d5cca9b4a4fa94ee59bab5975edc948f4c7ea7cf"
         ]
       }
+    },
+    "settingsOverrides": {
+      "@jupyterlab/apputils-extension:themes": {
+        "theme": "JupyterLab Dark"
+      },
+      "@jupyterlab/notebook-extension:panel": {
+        "toolbar": [
+          {
+            "args": {},
+            "command": "docmanager:download",
+            "icon": "ui-components:download",
+            "label": "Download",
+            "name": "download",
+            "rank": 50
+          }
+        ]
+      }
     }
   },
   "jupyter-lite-schema-version": 0
