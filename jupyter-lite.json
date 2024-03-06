@@ -3,7 +3,7 @@
   "jupyter-config-data": {
     "litePluginSettings": {
       "@jupyterlite/pyodide-kernel-extension:kernel": {
-        "pyodideUrl": ""
+        "pyodideUrl": "https://cdn.jsdelivr.net/pyodide/v0.16.1/full/pyodide.js"
       }
     }
   }
