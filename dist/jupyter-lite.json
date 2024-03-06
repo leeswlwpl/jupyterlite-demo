@@ -6,91 +6,7 @@
     "baseUrl": "./",
     "defaultKernelName": "python",
     "faviconUrl": "./lab/favicon.ico",
-    "federated_extensions": [
-      {
-        "extension": "./extension",
-        "liteExtension": false,
-        "load": "static/remoteEntry.0dca0b46350f0c25c608.js",
-        "name": "@jupyter-notebook/lab-extension",
-        "style": "./style"
-      },
-      {
-        "extension": "./extension",
-        "liteExtension": false,
-        "load": "static/remoteEntry.9f387e5e108e458f62c3.js",
-        "name": "@jupyter-widgets/jupyterlab-manager"
-      },
-      {
-        "liteExtension": false,
-        "load": "static/remoteEntry.b15a25cb741a6c7381f8.js",
-        "mimeExtension": "./mimeExtension",
-        "name": "@jupyterlab/fasta-extension",
-        "style": "./style"
-      },
-      {
-        "liteExtension": false,
-        "load": "static/remoteEntry.6a76d3e37f02d3977b44.js",
-        "mimeExtension": "./mimeExtension",
-        "name": "@jupyterlab/geojson-extension",
-        "style": "./style"
-      },
-      {
-        "extension": "./extension",
-        "liteExtension": true,
-        "load": "static/remoteEntry.badedd5607b5d4e57583.js",
-        "name": "@jupyterlite/pyodide-kernel-extension"
-      },
-      {
-        "extension": "./extension",
-        "liteExtension": false,
-        "load": "static/remoteEntry.a36d13f475360b3d8988.js",
-        "name": "bqplot"
-      },
-      {
-        "extension": "./extension",
-        "liteExtension": false,
-        "load": "static/remoteEntry.9693baf6fc7fc4c880d2.js",
-        "name": "ipycanvas"
-      },
-      {
-        "extension": "./extension",
-        "liteExtension": false,
-        "load": "static/remoteEntry.4d5ef87d14f03accc582.js",
-        "name": "ipyevents"
-      },
-      {
-        "extension": "./extension",
-        "liteExtension": false,
-        "load": "static/remoteEntry.5e71a5e8dcb6330c0085.js",
-        "name": "jupyter-leaflet"
-      },
-      {
-        "extension": "./extension",
-        "liteExtension": false,
-        "load": "static/remoteEntry.2245c790a510bf1865ea.js",
-        "name": "jupyter-matplotlib"
-      },
-      {
-        "extension": "./extension",
-        "liteExtension": false,
-        "load": "static/remoteEntry.6a37df5d4590b29196a3.js",
-        "name": "jupyterlab-night"
-      },
-      {
-        "extension": "./extension",
-        "liteExtension": false,
-        "load": "static/remoteEntry.c764a537ae4fed4fb4ca.js",
-        "mimeExtension": "./mimeExtension",
-        "name": "jupyterlab-plotly"
-      },
-      {
-        "extension": "./extension",
-        "liteExtension": false,
-        "load": "static/remoteEntry.5cbb9d2323598fbda535.js",
-        "name": "jupyterlab_pygments",
-        "style": "./style"
-      }
-    ],
+    "federated_extensions": [],
     "fileTypes": {
       "css": {
         "extensions": [
@@ -367,10 +283,20 @@
     "fullLabextensionsUrl": "./extensions",
     "fullStaticUrl": "./build",
     "licensesUrl": "./lab/api/licenses",
-    "litePluginSettings": {
-      "@jupyterlite/pyodide-kernel-extension:kernel": {
-        "pipliteUrls": [
-          "./extensions/@jupyterlite/pyodide-kernel-extension/static/pypi/all.json?sha256=347ef7784cbabf42964174d3d5cca9b4a4fa94ee59bab5975edc948f4c7ea7cf"
+    "settingsOverrides": {
+      "@jupyterlab/apputils-extension:themes": {
+        "theme": "JupyterLab Dark"
+      },
+      "@jupyterlab/notebook-extension:panel": {
+        "toolbar": [
+          {
+            "args": {},
+            "command": "docmanager:download",
+            "icon": "ui-components:download",
+            "label": "Download",
+            "name": "download",
+            "rank": 50
+          }
         ]
       }
     }
