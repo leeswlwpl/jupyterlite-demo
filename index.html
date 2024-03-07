@@ -39,13 +39,19 @@
 
     <script type="text/javascript">
       console.log("load custom package")
+
       async function main() {
         let pyodide = await loadPyodide();
         await pyodide.loadPackage(["seaborn"]);
 
+
         await pyodide.loadPackage("micropip");
+
         const micropip = pyodide.pyimport("micropip");
         await micropip.install("snowballstemmer");
+        await micropip.install("seaborn");
+
+
         await pyodide.runPython(`
         import snowballstemmer
         stemmer = snowballstemmer.stemmer('english')
