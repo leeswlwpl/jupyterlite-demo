@@ -33,59 +33,6 @@
       }.call(this));
     </script>
 
-    <script>
-      alert("index custom script 1");
-    </script>
-
-    <script type="text/javascript">
-      console.log("load custom package")
-
-      const { pyodide } = window.pyodide;
-
-      async function installPackage(packageName) {
-        console.log(`Installing package '${packageName}'...`)
-        // Load the package
-        await pyodide.loadPackage(packageName);
-        console.log(`Package '${packageName}' installed successfully!`);
-      }
-      installPackage('snowballstemmer');
-
-
-      async function main() {
-        console.log("start main")
-
-
-        let pyodide = await loadPyodide();
-        await pyodide.loadPackage(["seaborn"]);
-
-
-        await pyodide.loadPackage("micropip");
-
-        const micropip = pyodide.pyimport("micropip");
-        await micropip.install("snowballstemmer");
-        await micropip.install("seaborn");
-
-
-        console.log("before res1")
-        let res1 = await pyodide.runPython(`
-          import snowballstemmer
-          stemmer = snowballstemmer.stemmer('english')
-          print(stemmer.stemWords('go goes going gone'.split()))
-        `);
-        console.log("res1", res1)
-        let res2 = await pyodide.runPython(`
-          import pyodide_http
-          pyodide_http.patch_all()
-        `);
-        console.log("res2", res2)
-
-        return "done"
-      }
-      main();
-
-      console.log("code after main")
-    </script>
-
 
 
     <link rel="stylesheet" href="custom.css">
